@@ -1,0 +1,461 @@
+<window id="1119">
+	<defaultcontrol always="true">11901</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+    <controls>
+		
+		<include>CommonBackground</include>
+		<include>CommonTopBar</include>
+		<include>CommonBottomBar</include>
+		<include>HomeButtonCommons</include>
+        <include>BottomNowPLaying</include>
+
+      <control type="group" id="11900">
+		<include>Window_OpenClose_Animation_Zoom</include>
+			<posx>165</posx>
+			<posy>88</posy>
+			<include>VisibleFadeEffect</include>
+			<control type="button" id="11901">
+				<description>BMBT Power</description>
+                <onup>Control.SetFocus(12911)</onup>
+                <ondown>Control.SetFocus(11911)</ondown>
+                <onleft></onleft>
+                <onright>Control.SetFocus(11951)</onright>
+                <posx>0</posx>
+				<posy>0</posy>
+				<width>459</width>
+				<height>100</height>
+				<font>-</font>
+				<texturenofocus >settings_l.png</texturenofocus>
+				<texturefocus>settings_l_p.png</texturefocus>
+				<onclick>RunScript("special://skin/scripts/ibus_bmbt_power.py")</onclick>
+			</control>
+			<control type="image">
+				<description>BMBT Power</description>
+				<posx>37</posx>
+				<posy>20</posy>
+				<width>60</width>
+				<height>60</height>
+				<texture>shut-down2.png</texture>
+			</control>
+			<control type="label">
+				<description>BMBT Power</description>
+				<posx>400</posx>
+				<posy>0</posy>
+				<height>100</height>
+				<width>300</width>
+				<label>BMBT Power</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font30_title</font>
+				<textcolor>FFFFFFFF</textcolor>		
+			</control>
+		</control>
+		
+		<control type="group" id="11910">
+		    <include>Window_OpenClose_Animation_Zoom</include>
+			<posx>165</posx>
+			<posy>193</posy>
+			<include>VisibleFadeEffect</include>
+			<control type="button" id="11911">
+				<description>BMBT Mode</description>
+                <onup>Control.SetFocus(11901)</onup>
+                <ondown>Control.SetFocus(11921)</ondown>
+                <onright>Control.SetFocus(11961)</onright>
+                <posx>0</posx>
+				<posy>0</posy>
+				<width>459</width>
+				<height>100</height>
+				<font>-</font>
+				<texturenofocus >settings_l.png</texturenofocus>
+				<texturefocus>settings_l_p.png</texturefocus>
+				<onclick>RunScript("special://skin/scripts/ibus_bmbt_mode.py")</onclick>
+			</control>
+			<control type="image">
+				<description>BMBT Mode</description>
+				<posx>37</posx>
+				<posy>20</posy>
+				<width>60</width>
+				<height>60</height>
+				<texture>icon_big_music.png</texture>
+			</control>
+			<control type="label">
+				<description>BMBT Mode</description>
+				<posx>400</posx>
+				<posy>0</posy>
+				<height>100</height>
+				<width>300</width>
+				<label>BMBT Mode</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font30_title</font>
+				<textcolor>FFFFFFFF</textcolor>		
+			</control>
+		</control>
+		
+		<control type="group" id="11920">
+		<include>Window_OpenClose_Animation_Zoom</include>
+			<posx>165</posx>
+			<posy>298</posy>
+			<include>VisibleFadeEffect</include>
+			<control type="button" id="11921">
+				<description>Weather</description>
+                <onup>Control.SetFocus(11911)</onup>
+                <ondown>Control.SetFocus(11931)</ondown>
+                <onright>Control.SetFocus(11971)</onright>
+                <posx>0</posx>
+				<posy>0</posy>
+				<width>459</width>
+				<height>100</height>
+				<font>-</font>
+				<texturenofocus >settings_l.png</texturenofocus>
+				<texturefocus>settings_l_p.png</texturefocus>
+				<onclick>ActivateWindow(WeatherSettings)</onclick>
+			</control>
+			<control type="image">
+				<description>Weather</description>
+				<posx>37</posx>
+				<posy>20</posy>
+				<width>60</width>
+				<height>60</height>
+				<texture>icon_big_weather.png</texture>
+			</control>
+			<control type="label">
+				<description>Weather</description>
+				<posx>400</posx>
+				<posy>0</posy>
+				<height>100</height>
+				<width>300</width>
+				<label>Weather</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font30_title</font>
+				<textcolor>FFFFFFFF</textcolor>		
+			</control>
+		</control>
+		
+		<control type="group" id="11930">
+		<include>Window_OpenClose_Animation_Zoom</include>
+			<posx>165</posx>
+			<posy>403</posy>
+			<include>VisibleFadeEffect</include>
+			<control type="button" id="11931">
+				<description>Services</description>
+                <onup>Control.SetFocus(11921)</onup>
+                <ondown>Control.SetFocus(11941)</ondown>
+                <onright>Control.SetFocus(11981)</onright>
+                <posx>0</posx>
+				<posy>0</posy>
+				<width>459</width>
+				<height>100</height>
+				<font>-</font>
+				<texturenofocus >settings_l.png</texturenofocus>
+				<texturefocus>settings_l_p.png</texturefocus>
+				<onclick>ActivateWindow(ServiceSettings)</onclick>
+			</control>
+			<control type="image">
+				<description>Services</description>
+				<posx>37</posx>
+				<posy>20</posy>
+				<width>60</width>
+				<height>60</height>
+				<texture>icon_big_network.png</texture>
+			</control>
+			<control type="label">
+				<description>Services</description>
+				<posx>400</posx>
+				<posy>0</posy>
+				<height>100</height>
+				<width>300</width>
+				<label>Services</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font30_title</font>
+				<textcolor>FFFFFFFF</textcolor>		
+			</control>
+		</control>
+		
+		<control type="group" id="11940">
+		<include>Window_OpenClose_Animation_Zoom</include>
+			<posx>165</posx>
+			<posy>508</posy>
+			<include>VisibleFadeEffect</include>
+			<control type="button" id="11941">
+				<description>Skin Settings</description>
+                <onup>Control.SetFocus(11931)</onup>
+                <ondown>Control.SetFocus(11951)</ondown>
+                <onright>Control.SetFocus(11991)</onright>
+                <posx>0</posx>
+				<posy>0</posy>
+				<width>459</width>
+				<height>100</height>
+				<font>-</font>
+				<texturenofocus >settings_l.png</texturenofocus>
+				<texturefocus>settings_l_p.png</texturefocus>
+				<onclick>ActivateWindow(1113)</onclick>
+			</control>
+			<control type="image">
+				<description>Skin Settings</description>
+				<posx>37</posx>
+				<posy>20</posy>
+				<width>60</width>
+				<height>60</height>
+				<texture>icon_skin_w.png</texture>
+			</control>
+			<control type="label">
+				<description>Services</description>
+				<posx>400</posx>
+				<posy>0</posy>
+				<height>100</height>
+				<width>300</width>
+				<label>Skin Settings</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font30_title</font>
+				<textcolor>FFFFFFFF</textcolor>		
+			</control>
+		</control>
+
+        <control type="group" id="11950">
+		<include>Window_OpenClose_Animation_Zoom</include>
+			<posx>652</posx>
+			<posy>88</posy>
+			<include>VisibleFadeEffect</include>
+			<control type="button" id="11951">
+				<description>Video</description>
+                <onup>Control.SetFocus(11941)</onup>
+                <ondown>Control.SetFocus(11961)</ondown>
+                <onleft>Control.SetFocus(11901)</onleft> 
+                <posx>0</posx>
+				<posy>0</posy>
+				<width>459</width>
+				<height>100</height>
+				<font>-</font>
+				<texturenofocus >settings_r.png</texturenofocus>
+				<texturefocus>settings_r_p.png</texturefocus>
+				<onclick>ActivateWindow(VideosSettings)</onclick>
+			</control>
+			<control type="image">
+				<description>Video</description>
+				<posx>360</posx>
+				<posy>20</posy>
+				<width>60</width>
+				<height>60</height>
+				<texture>icon_big_video.png</texture>
+			</control>
+			<control type="label">
+				<description>Video</description>
+				<posx>50</posx>
+				<posy>0</posy>
+				<height>100</height>
+				<width>300</width>
+				<label>Video</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font30_title</font>
+				<textcolor>FFFFFFFF</textcolor>		
+			</control>
+		</control>
+		
+		<control type="group" id="11960">
+		<include>Window_OpenClose_Animation_Zoom</include>
+			<posx>652</posx>
+			<posy>193</posy>
+			<include>VisibleFadeEffect</include>
+			<control type="button" id="11961">
+				<description>Pictures</description>
+                <onup>Control.SetFocus(11951)</onup>
+                <ondown>Control.SetFocus(11971)</ondown>
+                <onleft>Control.SetFocus(11911)</onleft> 
+                <posx>0</posx>
+				<posy>0</posy>
+				<width>459</width>
+				<height>100</height>
+				<font>-</font>
+				<texturenofocus >settings_r.png</texturenofocus>
+				<texturefocus>settings_r_p.png</texturefocus>
+				<onclick>ActivateWindow(PicturesSettings)</onclick>
+			</control>
+			<control type="image">
+				<description>Pictures</description>
+				<posx>360</posx>
+				<posy>20</posy>
+				<width>60</width>
+				<height>60</height>
+				<texture>icon_big_pictures.png</texture>
+			</control>
+			<control type="label">
+				<description>Pictures</description>
+				<posx>50</posx>
+				<posy>0</posy>
+				<height>100</height>
+				<width>300</width>
+				<label>Pictures</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font30_title</font>
+				<textcolor>FFFFFFFF</textcolor>		
+			</control>
+		</control>
+		
+		<control type="group" id="11970">
+		<include>Window_OpenClose_Animation_Zoom</include>
+			<posx>652</posx>
+			<posy>298</posy>
+			<include>VisibleFadeEffect</include>
+			<control type="button" id="11971">
+				<description>Add-ons</description>
+                <onup>Control.SetFocus(11961)</onup>
+                <ondown>Control.SetFocus(11981)</ondown>
+                <onleft>Control.SetFocus(11921)</onleft> 
+                <posx>0</posx>
+				<posy>0</posy>
+				<width>459</width>
+				<height>100</height>
+				<font>-</font>
+				<texturenofocus >settings_r.png</texturenofocus>
+				<texturefocus>settings_r_p.png</texturefocus>
+				<onclick>ActivateWindow(AddonBrowser)</onclick>
+			</control>
+			<control type="image">
+				<description>Add-ons</description>
+				<posx>360</posx>
+				<posy>20</posy>
+				<width>60</width>
+				<height>60</height>
+				<texture>icon_big_addons.png</texture>
+			</control>
+			<control type="label">
+				<description>Add-ons</description>
+				<posx>50</posx>
+				<posy>0</posy>
+				<height>100</height>
+				<width>300</width>
+				<label>Add-ons</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font30_title</font>
+				<textcolor>FFFFFFFF</textcolor>		
+			</control>
+		</control>
+		
+		<control type="group" id="11980">
+		<include>Window_OpenClose_Animation_Zoom</include>
+			<posx>652</posx>
+			<posy>403</posy>
+			<include>VisibleFadeEffect</include>
+			<control type="button" id="11981">
+				<description>System</description>
+                <onup>Control.SetFocus(11971)</onup>
+                <ondown>Control.SetFocus(11991)</ondown>
+                <onleft>Control.SetFocus(11931)</onleft> 
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>459</width>
+				<height>100</height>
+				<font>-</font>
+				<texturenofocus >settings_r.png</texturenofocus>
+				<texturefocus>settings_r_p.png</texturefocus>
+				<onclick>ActivateWindow(SystemSettings)</onclick>
+			</control>
+			<control type="image">
+				<description>System</description>
+				<posx>360</posx>
+				<posy>20</posy>
+				<width>60</width>
+				<height>60</height>
+				<texture>icon_big_system.png</texture>
+			</control>
+			<control type="label">
+				<description>System</description>
+				<posx>50</posx>
+				<posy>0</posy>
+				<height>100</height>
+				<width>300</width>
+				<label>System</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font30_title</font>
+				<textcolor>FFFFFFFF</textcolor>		
+			</control>
+		</control>
+
+		<control type="group" id="11990">
+		<include>Window_OpenClose_Animation_Zoom</include>
+			<posx>652</posx>
+			<posy>508</posy>
+			<include>VisibleFadeEffect</include>
+			<control type="button" id="11991">
+				<description>System Update</description>
+                <onup>Control.SetFocus(11981)</onup>
+                <ondown>Control.SetFocus(12901)</ondown>
+                <onleft>Control.SetFocus(11941)</onleft> 
+                <posx>0</posx>
+				<posy>0</posy>
+				<width>459</width>
+				<height>100</height>
+				<font>-</font>
+				<texturenofocus >settings_r.png</texturenofocus>
+				<texturefocus>settings_r_p.png</texturefocus>
+				<onclick>RunScript("plugin.program.carpcupdater")</onclick>
+			</control>
+			<control type="image">
+				<description>System Update</description>
+				<posx>360</posx>
+				<posy>20</posy>
+				<width>60</width>
+				<height>60</height>
+				<texture>icon_settings_w.png</texture>
+			</control>
+			<control type="label">
+				<description>System Update</description>
+				<posx>50</posx>
+				<posy>0</posy>
+				<height>100</height>
+				<width>300</width>
+				<label>System Update</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font30_title</font>
+				<textcolor>FFFFFFFF</textcolor>		
+			</control>
+		</control>
+
+
+		<control type="label">
+			<description>Window label</description>
+			<include>MediaWindowTitleCommons</include>
+			<label>BMW Control</label>
+		</control>
+		
+		<control type="group" id="12900">
+           <include>Window_OpenClose_Animation_Slide_Up</include>
+            <posx>95r</posx>
+            <posy>85r</posy>
+            <control type="button" id="12901">
+                <ondown>Control.SetFocus(12911)</ondown>
+                <onup>Control.SetFocus(11991)</onup>
+                <onleft>Control.11)</onleft>
+				<onright></onright>
+                <description>Back Button</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>82</width>
+                <height>82</height>
+                <texturenofocus  border="4">floor_button_t.png</texturenofocus>
+                <texturefocus border="4">floor_buttonfo.png</texturefocus>
+                <onclick>back</onclick>
+            </control>   
+            <control type="image">
+                <description>Back Button Image</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>82</width>
+                <height>82</height>
+                <texture>icon_back_w.png</texture>
+                <bordersize>12</bordersize>
+            </control>
+        </control>
+        
+		<include>BehindDialogFadeOut</include>
+	</controls>
+</window>
