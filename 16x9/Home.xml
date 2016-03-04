@@ -76,7 +76,7 @@
             <width>400</width>
             <height>400</height>
             <aspectratio></aspectratio>
-            <texture>logo.png</texture>
+            <texture>bmw_logo.png</texture>
             <visible>![Skin.HasSetting(UseCustomLogo) + !IsEmpty(Skin.String(CustomLogoPath))]</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
         </control>
